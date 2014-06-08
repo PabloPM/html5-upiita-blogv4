@@ -1,0 +1,126 @@
+<!-- Este es un comentario Indicamos que tipo de archivo -->
+<!DOCTYPE html>
+<html>
+    <!-- head contiene la configuracion de la página -->
+    <HEAD>
+        <title>Blog</title>
+        <!-- Encoding -->
+        <meta charset="UTF-8"/>
+        <!-- Importar una hoja de estilos -->
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/estilos.css" rel="stylesheet"/>
+    </heAd>
+    <!-- contenido de la pagina -->
+    <body>
+        <header>
+            <div id="titulo">
+               <h1>Artesanos del Software</h1> 
+            </div>
+            <!-- barra de navegacion -->
+            <nav id="menu">
+                <!-- lista ul (viñetas) ol (ordenada)-->
+                <ul>
+                    <li>
+                        Inicio
+                    </li>
+                    <li>
+                        Galeria
+                    </li>
+                    <li>
+                        Canvas
+                    </li>
+                    <li>
+                        Chat
+                    </li>
+                    <li>
+                        Contacto
+                    </li>
+                    <li>
+                        Ubicación
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="bienvenida">
+            Porque programar es un arte
+        </section>
+        <section id="nuestros-servicios">
+            <div class="servicio">
+                <img src="imagenes/videojuegos.png"/>
+                <p>
+                    Videojuegos
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="imagenes/ciencia.png"/>
+                <p>
+                    Ciencia
+                </p>
+            </div>
+            <div class="servicio">
+                <img src="imagenes/desarrollo.png"/>
+                <p>
+                    Desarrollo
+                </p>
+            </div>
+        </section>
+        <section id="conocenos">
+            <h3>Conócenos</h3>
+            <div class="mono">
+                <img src="imagenes/mono.jpg"/>
+                <p>
+                    Nuestro CEO (Dr. Mono)
+                </p>
+            </div>
+            <div class="mono">
+                <video controls="controls">
+                    <source src="videos/bunsen.mp4" type="video/mp4"/>
+                    <source src="videos/bunsen.ogv" type="video/ogg"/>
+                    <source src="videos/bunsen.webm" type="video/webm"/>
+                    Tu navegador no soporta video nativo
+                </video>
+                <p>
+                    Nuestra Historia
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div id="siguenos">
+                <h3>Síguenos</h3>
+                <img src="imagenes/Facebook.png"/>
+                <img src="imagenes/GooglePlus.png"/>
+                <img src="imagenes/Twitter.png"/>
+                <img src="imagenes/github.png"/>
+            </div>
+            <div id="suscribir">
+                <h3>Suscríbete</h3>
+                <label>Email: </label>
+                <input type="text"/>
+            </div>
+            <div id="powered">
+                <h3>Powered by:</h3>
+                <ul>
+                    <li>
+                        <a href="http://www.w3.org/html/wg/drafts/html/master/">HTML5</a>
+                    </li>
+                    <li>
+                        <a href="http://nodejs.org/">Node.js</a>
+                    </li>
+                    <li>
+                        <a href="http://mozilla.github.io/nunjucks/">Nunjucks</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="http://jquery.com/">JQuery</a>
+                    </li>
+                    <li>
+                        <a href="https://www.openshift.com/">OpenShift</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
+

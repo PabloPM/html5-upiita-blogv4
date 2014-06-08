@@ -1,0 +1,87 @@
+/*tamaño de letra por default*/
+body{
+	/*font-size: 17px;*/
+}
+
+/* Selector de etiqueta */
+header, footer {
+	/*color de fondo*/
+	/*background-color: green;*/
+	/*background-color: rgb(89, 100, 190);*/
+	/*background-color: rgba(89, 100, 190, 0.7);*/
+	background-color: #3B2F63;
+}
+h1 {
+	/*color de fuente*/
+	color: #FFFFFF;
+}
+nav, footer {
+	color: #c7c0de;
+}
+/*selector de id*/
+#conocenos {
+	background-color: #c7c0de;
+	color: #3B2F63;
+	text-align: center;
+	font-size: 1.2em;
+}
+#bienvenida {
+	background-image: url("../imagenes/portada.jpg");
+	line-height: 600px;
+	/*imagen cubre toda la caja*/
+	background-size: cover;
+	/*la imagen no se repita*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: green;
+	text-align: center;
+	font-size: 1.5em;
+}
+/*selectores de clase*/
+.servicio {
+	display: inline-block;
+	/*ancho en px, porcentaje, unidades em*/
+	width: 20%;
+}
+#nuestros-servicios {
+	background-image: url("../imagenes/fondo.png");
+	background-attachment: fixed;
+	text-align: center;
+	font-size: 1.2em;
+}
+.mono {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+#siguenos, #suscribir {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+#powered {
+	display: inline-block;
+	width: 10%;
+}
+/*selector de descendientes*/
+#powered ul li a {
+	color: #c7c0de;
+}
+#titulo {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	font-size: 0.8em;
+}
+#menu {
+	display: inline-block;
+	width: 55%;
+}
+#menu ul li {
+	display: inline-block;
+	width: 15%;
+}
+img, video {
+	/*solo se usa para imagenes y videos*/
+	max-width: 100%;
+}
