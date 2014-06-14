@@ -1,7 +1,6 @@
 /*tamaño de letra por default*/
-body{
-	/*font-size: 17px;*/
-}
+/*lap font-size: 16px 1em = 16px
+ moviles font-size: 20px 1em=20px*/
 
 /* Selector de etiqueta */
 header, footer {
@@ -24,10 +23,11 @@ nav, footer {
 	color: #3B2F63;
 	text-align: center;
 	font-size: 1.2em;
+	padding: 2%;
 }
 #bienvenida {
 	background-image: url("../imagenes/portada.jpg");
-	line-height: 600px;
+
 	/*imagen cubre toda la caja*/
 	background-size: cover;
 	/*la imagen no se repita*/
@@ -35,53 +35,60 @@ nav, footer {
 	background-attachment: fixed;
 	color: green;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 /*selectores de clase*/
 .servicio {
-	display: inline-block;
-	/*ancho en px, porcentaje, unidades em*/
-	width: 20%;
+	padding: 0% 5% 0% 5%;
 }
 #nuestros-servicios {
 	background-image: url("../imagenes/fondo.png");
 	background-attachment: fixed;
 	text-align: center;
 	font-size: 1.2em;
-}
-.mono {
-	display: inline-block;
-	width: 45%;
-	vertical-align: top;
-}
-#siguenos, #suscribir {
-	display: inline-block;
-	width: 25%;
-	vertical-align: top;
-}
-#powered {
-	display: inline-block;
-	width: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 /*selector de descendientes*/
 #powered ul li a {
 	color: #c7c0de;
 }
 #titulo {
-	display: inline-block;
-	width: 35%;
-	vertical-align: top;
 	font-size: 0.8em;
 }
-#menu {
-	display: inline-block;
-	width: 55%;
-}
 #menu ul li {
-	display: inline-block;
-	width: 15%;
+	text-align: center;
 }
 img, video {
 	/*solo se usa para imagenes y videos*/
 	max-width: 100%;
 }
+#menu ul li a{
+	color:#C7C0DE;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#menu ul{
+	margin: 0px;
+}
+
+#conocenos h3{
+	margin: 0px;
+}
+
+footer{
+	padding: 3%;
+}
+#siguenos, #suscribir, #powered{
+	padding: 1% 4% 1% 4%;
+}
+
+
+
+
+
+
+
+
+

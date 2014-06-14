@@ -1,0 +1,63 @@
+/*dos columnas con el titulo
+ y la barra de navegacion*/
+#titulo {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	padding-left: 3em;
+}
+#menu {
+	display: inline-block;
+	width: 55%;
+}
+/*columnas de la barra de navegacion*/
+#menu ul li {
+	display: inline-block;
+	width: 15%;
+}
+
+#menu ul li a {
+	padding: 25%;
+}
+
+#bienvenida {
+	line-height: 600px;
+}
+
+.servicio {
+	display: inline-block;
+	/*ancho en px, porcentaje, unidades em*/
+	width: 20%;
+}
+
+.mono {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+#siguenos, #suscribir {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+#powered {
+	display: inline-block;
+	width: 10%;
+}
+
+#suscribir{
+	border-left: solid 2px #C7C0DE;
+	border-right: solid 2px #C7C0DE;
+	height: 230px;
+}
+
+
+
+
+
+
+
+
+
+

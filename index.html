@@ -6,9 +6,13 @@
         <title>Blog</title>
         <!-- Encoding -->
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <!-- Importar una hoja de estilos -->
         <link href="css/normalize.css" rel="stylesheet" />
-        <link href="css/estilos.css" rel="stylesheet"/>
+        <link href="css/global.css" rel="stylesheet"/>
+        <!-- Estilos para cada dispositivo -->
+        <link href="css/lap.css" rel="stylesheet" media="screen and (min-width: 800px)"/>
+        <link href="css/celular.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
     </heAd>
     <!-- contenido de la pagina -->
     <body>
@@ -19,24 +23,25 @@
             <!-- barra de navegacion -->
             <nav id="menu">
                 <!-- lista ul (viñetas) ol (ordenada)-->
+                
                 <ul>
                     <li>
-                        Inicio
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        Galeria
+                        <a href="galeria.html">Galeria</a>
                     </li>
                     <li>
-                        Canvas
+                        <a href="canvas.html">Canvas</a>
                     </li>
                     <li>
-                        Chat
+                        <a href="chat.html">Chat</a>
                     </li>
                     <li>
-                        Contacto
+                        <a href="contacto.html">Contacto</a>
                     </li>
                     <li>
-                        Ubicación
+                        <a href="ubicacion.html">Ubicación</a>
                     </li>
                 </ul>
             </nav>
