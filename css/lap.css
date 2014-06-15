@@ -46,11 +46,32 @@
 	width: 10%;
 }
 
-#suscribir{
+#suscribir {
 	border-left: solid 2px #C7C0DE;
 	border-right: solid 2px #C7C0DE;
 	height: 230px;
 }
+/*posicionamiento fijo*/
+#redes-fijas {
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	width: 50px;
+	background-color: #C7C0DE;
+	opacity: 0.7;
+	text-align: center;
+	padding: 10px;
+	border-radius: 0.5em 1em 1.5em 2em;
+	/*sombra en la caja*/
+	-o-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*opera*/
+	-ms-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*ie*/
+	-webkit-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*chrome*/
+	-moz-box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);/*firefox*/
+	box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);
+}
+
+
+
 
 
 

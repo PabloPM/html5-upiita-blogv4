@@ -13,6 +13,11 @@ header, footer {
 h1 {
 	/*color de fuente*/
 	color: #FFFFFF;
+	text-shadow: -4px 3px 0px rgba(170, 177, 202, 1);
+	-webkit-text-shadow: -4px 3px 0px rgba(170, 177, 202, 1);
+	-o-text-shadow: -4px 3px 0px rgba(170, 177, 202, 1);
+	-ms-text-shadow: -4px 3px 0px rgba(170, 177, 202, 1);
+	-moz-text-shadow: -4px 3px 0px rgba(170, 177, 202, 1);
 }
 nav, footer {
 	color: #c7c0de;
