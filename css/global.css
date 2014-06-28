@@ -89,8 +89,71 @@ footer{
 	padding: 1% 4% 1% 4%;
 }
 
+/* una clase fondo-blanco */
+.fondo-blanco{
+	background-color: white;
+}
+/*galeria*/
+#galeria{
+	height: 750px;
+	text-align: center;
+}
+#galeria h2 {
+	text-align: center;
+	color: #1E1E1C;
+	font-size: 3em;
+}
 
+#contenedor-imagen {
+	display: inline-block;
+	width: 40%;
+	border-radius: 1em;
+	border: solid 2px #C7C0DE;
+	background-color: #C7C0DE;
+	padding: 2%;
+	position: relative;
+}
 
+#contenedor-preview {
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+	margin-left: 10%;
+}
+
+#contenedor-preview img {
+	border-radius: 1em;
+	border: solid 2px #C7C0DE;
+	background-color: #C7C0DE;
+	padding: 5%;
+}
+
+#descripcion-imagen {
+	color: #FFFFFF;
+	padding: 4%;
+	background-color: #3B2F63;
+	opacity: 0.7;
+	margin: 0px 5% 5% 5%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+/*pseudoselector focus*/
+#email{
+	width: 60%;
+}
+#email:focus{
+	width: 80%;
+}
+/*transiciones*/
+#email, #menu ul li a, .servicio img, #siguenos img{
+	transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
+	-moz-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
+	-ms-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
+	-o-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
+	-webkit-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
+}
 
 
 
