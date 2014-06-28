@@ -1,6 +1,9 @@
 /*tamaño de letra por default*/
 /*lap font-size: 16px 1em = 16px
  moviles font-size: 20px 1em=20px*/
+body{
+	font-family: 'GloriaHallelujah';
+}
 
 /* Selector de etiqueta */
 header, footer {
