@@ -49,7 +49,7 @@ nav, footer {
 .servicio {
 	padding: 0% 5% 0% 5%;
 }
-#nuestros-servicios {
+#nuestros-servicios, #galeria, #suscrito{
 	background-image: url("../imagenes/fondo.png");
 	background-attachment: fixed;
 	text-align: center;
@@ -158,8 +158,20 @@ footer{
 	-webkit-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
 }
 
+/*pseudo selectores para formas*/
+input:required:invalid{
+	background-image: url("../imagenes/incorrecto.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: right top;
+}
 
-
+input:required:valid{
+	background-image: url("../imagenes/correcto.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: right top;
+}
 
 
 

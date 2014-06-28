@@ -38,18 +38,18 @@
 
 #siguenos, #suscribir {
 	display: inline-block;
-	width: 25%;
+	width: 27%;
 	vertical-align: top;
 }
 #powered {
 	display: inline-block;
-	width: 10%;
+	width: 13%;
 }
 
 #suscribir {
 	border-left: solid 2px #C7C0DE;
 	border-right: solid 2px #C7C0DE;
-	height: 230px;
+	height: 300px;
 }
 /*posicionamiento fijo*/
 #redes-fijas {
