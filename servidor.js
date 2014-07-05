@@ -60,6 +60,16 @@ app.get("/contacto", function(req, res){
 	res.render("contacto.html");
 } );
 
+app.get("/index_contenido", function(req, res){
+	//res.send("Repondiendo a la peticion get /");
+	res.render("index_contenido.html");
+} );
+
+app.get("/galeria_contenido", function(req, res){
+	//res.send("Repondiendo a la peticion get /");
+	res.render("galeria_contenido.html");
+} );
+
 /*respoder a una peticion post*/
 app.post("/suscribir", function(req, res){
 	var parametroEmail = req.body.correo;

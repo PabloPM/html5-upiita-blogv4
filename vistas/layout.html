@@ -16,7 +16,7 @@
         <link href="../css/celular.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="../javascript/jquery-1.10.2.min.js"></script>
-
+        <script src="../javascript/peticiones_ajax.js"></script>
     </heAd>
     <!-- contenido de la pagina -->
     <body>
@@ -30,28 +30,27 @@
 
                 <ul>
                     <li>
-                        <a href="/">Inicio</a>
+                        <a href="/" data-ruta="/index_contenido">Inicio</a>
                     </li>
                     <li>
-                        <a href="/galeria">Galeria</a>
+                        <a href="/galeria" data-ruta="/galeria_contenido">Galeria</a>
                     </li>
                     <li>
-                        <a href="/canvas">Canvas</a>
+                        <a href="/chat" data-ruta="/chat_contenido">Chat</a>
                     </li>
                     <li>
-                        <a href="/chat">Chat</a>
+                        <a href="/contacto" data-ruta="/contacto_contenido">Contacto</a>
                     </li>
                     <li>
-                        <a href="/contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="/ubicacion">Ubicación</a>
+                        <a href="/ubicacion" data-ruta="/ubicacion_contenido">Ubicación</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        {% block contenido %}
-        {% endblock %}
+        <div id="contenedor">
+            {% block contenido %}
+            {% endblock %}
+        </div>
         <footer>
             <div id="siguenos">
                 <h3>Síguenos</h3>
@@ -79,7 +78,7 @@
                     <input name="correo" id="email" type="email" placeholder="escribe tu email" required="required"/>
                     <input type="submit" value="suscribir"/>
                 </form>
-                
+
             </div>
             <div id="powered">
                 <h3>Powered by:</h3>
