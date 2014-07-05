@@ -66,10 +66,11 @@ app.post("/contactar", function(request, response){
 	var email = request.body.correo;
 	var web = request.body.sitio;
 	var comentario = request.body.comentario;
-	console.log(nombre);
-	console.log(email);
-	console.log(web);
-	console.log(comentario);
+	response.render("contactar.html",{
+		nombre: nombre,
+		emai: email,
+		comentario: comentario
+	});
 });
 
 
