@@ -85,11 +85,14 @@ app.post("/contactar", function(request, response){
 //escuchar peticiones de conexion
 var io = socketio.listen(servidor);
 //escuchar mensaje de cualqueir cliente
-
+var contador = 0;
 io.sockets.on("connection", function(socket){
 	//actualizar contador
-	
-	//enviar un mensaje alos clientes
+	contador = contador + 1;
+	//enviar un mensaje a los clientes
+	io.sockets.emit("actualizar_contador",{
+		clientes: contador
+	});
 	
 	//enviarle el mensaje que recibi a todos los demas clientes
 	socket.on("mensaje_al_servidor", function(datos){

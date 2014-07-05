@@ -1,6 +1,7 @@
 $(function() {
 	/*io se define cuando se importo socket io*/
 	var socket = io.connect(location.origin);
+	var cajita = $("#usuarios");
 	/*enviar mensaje al servidor*/
 	$("#boton").click(function() {
 		/*obtener los datos que voy a enviar*/
@@ -20,6 +21,11 @@ $(function() {
 	
 	socket.on("mensaje_al_cliente",function(datos){
 		mostrar_mensaje(datos.nombre, datos.mensaje);
+	});
+	
+	//escuchar el mensaje actualiza contador
+	socket.on("actualizar_contador", function(datos){
+		cajita.html(datos.clientes);
 	});
 });
 
