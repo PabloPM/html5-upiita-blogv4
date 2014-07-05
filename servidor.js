@@ -61,6 +61,17 @@ app.post("/suscribir", function(req, res){
 	});
 } );
 
+app.post("/contactar", function(request, response){
+	var nombre = request.body.nombre;
+	var email = request.body.correo;
+	var web = request.body.sitio;
+	var comentario = request.body.comentario;
+	console.log(nombre);
+	console.log(email);
+	console.log(web);
+	console.log(comentario);
+});
+
 
 
 
