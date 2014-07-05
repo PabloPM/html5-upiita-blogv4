@@ -17,5 +17,9 @@ $(function() {
 		var caja = "<div class='mensaje'> <span>" + nom + " dice: </span> " + mens + "</div>";
 		$("#mensajes").append(caja);
 	};
+	
+	socket.on("mensaje_al_cliente",function(datos){
+		mostrar_mensaje(datos.nombre, datos.mensaje);
+	});
 });
 

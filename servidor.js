@@ -89,6 +89,11 @@ io.sockets.on("connection", function(socket){
 	socket.on("mensaje_al_servidor", function(datos){
 		console.log(datos.nombre);
 		console.log(datos.mensaje);
+		//enviale mensaje a todos los clientes
+		io.sockets.emit("mensaje_al_cliente",{
+			mensaje: datos.mensaje,
+			nombre: datos.nombre
+		});
 	});
 });
 
