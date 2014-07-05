@@ -4,6 +4,7 @@ var nunjucks = require("nunjucks");
 var bodyParser = require("body-parser");
 var socketio = require("socket.io");
 var http = require("http");
+var sanitizer = require("sanitizer");
 
 /*app representa la funcionalidad de la aplicacion web*/
 var app = express();
@@ -84,15 +85,20 @@ app.post("/contactar", function(request, response){
 //escuchar peticiones de conexion
 var io = socketio.listen(servidor);
 //escuchar mensaje de cualqueir cliente
+
 io.sockets.on("connection", function(socket){
+	//actualizar contador
+	
+	//enviar un mensaje alos clientes
+	
 	//enviarle el mensaje que recibi a todos los demas clientes
 	socket.on("mensaje_al_servidor", function(datos){
 		console.log(datos.nombre);
 		console.log(datos.mensaje);
 		//enviale mensaje a todos los clientes
 		io.sockets.emit("mensaje_al_cliente",{
-			mensaje: datos.mensaje,
-			nombre: datos.nombre
+			mensaje: sanitizer.escape(datos.mensaje),
+			nombre: sanitizer.escape(datos.nombre)
 		});
 	});
 });
