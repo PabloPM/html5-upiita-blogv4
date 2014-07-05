@@ -41,6 +41,11 @@ app.get("/galeria", function(req, res){
 	res.render("galeria.html");
 } );
 
+app.get("/ubicacion", function(req, res){
+	//res.send("Repondiendo a la peticion get /");
+	res.render("ubicacion.html");
+} );
+
 /*respoder a una peticion post*/
 app.post("/suscribir", function(req, res){
 	var parametroEmail = req.body.correo;
