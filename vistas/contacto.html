@@ -4,7 +4,7 @@
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <form method="post" action="contactar">
+    <form id="formulario" method="post" action="contactar">
         <div>
             <label for="name">Nombre: </label>
             <input required="required" id="name" type="text" name="nombre" pattern="[a-zA-Z]+"/>
@@ -20,6 +20,9 @@
         <div>
             <label for="comment">Mensaje</label>
             <textarea id="comment" required="required" name="comentario"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Envíar"/>
         </div>
     </form>
 </section>
