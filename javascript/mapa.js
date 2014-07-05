@@ -7,7 +7,11 @@ $(function() {
 		$("#mapa").goMap({
 			markers : [{
 				latitude: latitud,
-				longitude: longitud
+				longitude: longitud,
+				draggable: true,
+				icon: "../imagenes/marcadores/arrastrar.png",
+				title: "UPIITA",
+				html:"Curso Node.js y HTML5"
 			}],
 			zoom : 17
 		});
