@@ -46,6 +46,11 @@ app.get("/ubicacion", function(req, res){
 	res.render("ubicacion.html");
 } );
 
+app.get("/contacto", function(req, res){
+	//res.send("Repondiendo a la peticion get /");
+	res.render("contacto.html");
+} );
+
 /*respoder a una peticion post*/
 app.post("/suscribir", function(req, res){
 	var parametroEmail = req.body.correo;
