@@ -1,5 +1,4 @@
 $(function() {
-	alert("Chat!!");
 	/*io se define cuando se importo socket io*/
 	var socket = io.connect(location.origin);
 	/*enviar mensaje al servidor*/
@@ -8,6 +7,10 @@ $(function() {
 		var nombreCliente = $("#nombre-usuario").val();
 		var mensajeCliente = $("#mensaje-usuario").val();
 		/* enviar datos al servidor */
+		socket.emit("mensaje_al_servidor",{
+			nombre: nombreCliente,
+			mensaje: mensajeCliente
+		});
 	});
 	/*recibir mensaje del servidor*/
 	var mostrar_mensaje = function(nom, mens) {

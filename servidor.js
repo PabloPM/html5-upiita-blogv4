@@ -2,11 +2,14 @@
 var express = require("express");
 var nunjucks = require("nunjucks");
 var bodyParser = require("body-parser");
+var socketio = require("socket.io");
+var http = require("http");
 
 /*app representa la funcionalidad de la aplicacion web*/
 var app = express();
+var servidor = http.createServer(app);
+servidor.listen(8080);
 
-app.listen(8080);
 console.log("servidor levantado");
 
 /*usamos body parser para recibir datos del cliente*/
@@ -78,7 +81,14 @@ app.post("/contactar", function(request, response){
 	});
 });
 
-
-
-
+//escuchar peticiones de conexion
+var io = socketio.listen(servidor);
+//escuchar mensaje de cualqueir cliente
+io.sockets.on("connection", function(socket){
+	//enviarle el mensaje que recibi a todos los demas clientes
+	socket.on("mensaje_al_servidor", function(datos){
+		console.log(datos.nombre);
+		console.log(datos.mensaje);
+	});
+});
 
