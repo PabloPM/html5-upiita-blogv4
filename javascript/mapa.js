@@ -12,8 +12,14 @@ $(function() {
 				icon: "../imagenes/marcadores/arrastrar.png",
 				title: "UPIITA",
 				html:"Curso Node.js y HTML5"
+			},{
+				address: "Parque Lindavista",
+				icon:"../imagenes/marcadores/apartamento.png",
+				title:"Artesanos del Software",
+				html:"Empresa"
 			}],
-			zoom : 17
+			zoom : 11,
+			maptype:"roadmap"
 		});
 
 	});
