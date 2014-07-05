@@ -188,3 +188,20 @@ input:required:valid{
 #formulario{
 	text-align:left;
 }
+#chat{
+	font-size: 1.6em;
+	text-align: left;
+	padding: 1% 5% 4% 5%;
+}
+#chat h2{
+	text-align: center;
+}
+
+#mensaje-usuario,  #nombre-usuario{
+	width: 30%;
+}
+
+.mensaje span{
+	color: #3B2F63;
+}
+
