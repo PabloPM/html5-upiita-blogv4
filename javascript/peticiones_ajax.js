@@ -25,9 +25,9 @@ $(function() {
 			
 			/*de acuerdo a la ruta del navegador obtenemos la url AJAX*/
 			if(rutaEntrada === "/"){
-				urlAjax = "index-contenido";
+				urlAjax = "index_contenido";
 			}else{
-				urlAjax = rutaEntrada + "-contenido";
+				urlAjax = rutaEntrada + "_contenido";
 			}
 			
 			//una manera mas corta de hacer el if-else anterior

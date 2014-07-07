@@ -9,8 +9,9 @@
 	padding-left: 0px;
 }
 #menu ul li a{
-	width: 90%;
-	padding: 0.5em;
+	width: 99%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	border: solid 2px #C7C0DE;
 }
 #bienvenida{
@@ -18,7 +19,7 @@
 	font-size: 1.2em;
 	padding: 0.5em;
 }
-#conocenos h3{
+#conocenos h3, nav{
 	padding-bottom: 1em;
 }
 

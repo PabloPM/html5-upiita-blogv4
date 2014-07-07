@@ -8,16 +8,21 @@
 }
 #menu {
 	display: inline-block;
-	width: 55%;
+	width: 58%;
 }
 /*columnas de la barra de navegacion*/
 #menu ul li {
+	text-align: center;
 	display: inline-block;
-	width: 15%;
+	width: 18%;
 }
 
 #menu ul li a {
-	padding: 25%;
+	width: 100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: inline-block;
+	text-align: center;
 }
 
 #bienvenida {
@@ -70,18 +75,13 @@
 	box-shadow: -8px 6px 0px 0px rgba(175, 177, 181, 0.75);
 }
 /*pseudoselector de etiqueta
-detecta si el mouse esta sobre en enlace*/
-#menu ul li a{
-	display:inline-block;
-	margin-top: 5px;
-	text-align: center;
-}
-#menu ul li a:hover{
+ detecta si el mouse esta sobre en enlace*/
+#menu ul li a:hover {
 	/*border-top: solid 2px #C7C0DE;*/
-	background-color:#C7C0DE;
+	background-color: #C7C0DE;
 	color: #3B2F63;
 }
-.servicio img:hover{
+.servicio img:hover {
 	transform: scale(1.2);
 	-o-transform: scale(1.2);
 	-webkit-transform: scale(1.2);
@@ -89,20 +89,11 @@ detecta si el mouse esta sobre en enlace*/
 	-moz-transform: scale(1.2);
 }
 
-#siguenos img:hover{
+#siguenos img:hover {
 	transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 }
-
-
-
-
-
-
-
-
-
 
