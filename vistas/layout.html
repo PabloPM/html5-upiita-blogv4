@@ -14,8 +14,10 @@
         <!-- Estilos para cada dispositivo -->
         <link href="../css/lap.css" rel="stylesheet" media="screen and (min-width: 800px)"/>
         <link href="../css/celular.css" rel="stylesheet" media="screen and (max-width: 800px)"/>
+        <!-- Librería para estadisticas de Google Maps  -->
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="../javascript/jquery-1.10.2.min.js"></script>
+        <script src="../javascript/jquery.history.js"></script>
         <script src="../javascript/peticiones_ajax.js"></script>
     </heAd>
     <!-- contenido de la pagina -->
@@ -73,7 +75,7 @@
             <div id="suscribir">
                 <h3>Suscríbete</h3>
 
-                <form action="/suscribir" method="post">
+                <form class="formulario-ajax" action="/suscribir" method="post">
                     <label for="email" >Email: </label>
                     <input name="correo" id="email" type="email" placeholder="escribe tu email" required="required"/>
                     <input type="submit" value="suscribir"/>
