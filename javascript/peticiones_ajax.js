@@ -58,7 +58,7 @@ $(function() {
 		 * EL tercer parametro es es una cadena se pegara al final de la URL*/
 		History.pushState({
 			urlAJAX : rutaAJAX
-		}, "ArtesanosSW" + rutaGET, rutaGET);
+		}, "Blog" + rutaGET, rutaGET);
 
 		return false;
 
