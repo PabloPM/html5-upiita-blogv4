@@ -44,11 +44,20 @@ footer{
 	display:none;
 }
 
+/*------------------ GALERIA ---------------------*/
+#contenedor-imagen {
+	margin: 0% 8% 6% 8%;
+	}
 
-
-
-
-
+#contenedor-preview img{
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	padding: 2%;
+}
+#descripcion-imagen {
+	margin: 0px 16px 25px 16px;
+}
 
 
 

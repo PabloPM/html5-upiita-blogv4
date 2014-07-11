@@ -56,6 +56,7 @@
 	border-right: solid 2px #C7C0DE;
 	height: 300px;
 }
+
 /*posicionamiento fijo*/
 #redes-fijas {
 	position: fixed;
@@ -97,3 +98,35 @@
 	-ms-transform: rotate(180deg);
 }
 
+/*---------------- GALERIA -----------------*/
+#galeria {
+	height: 800px;
+}
+
+#contenedor-imagen {
+	display: inline-block;
+	width: 40%;
+	margin-left: 10%;
+}
+
+#contenedor-preview {
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+}
+
+#descripcion-imagen {
+	margin: 0px 5% 7% 5%;
+}
+#contenedor-preview img{
+	padding: 10%;
+}
+/*-------------------- UBICACION ----------------------*/
+#direccion, #columna-derecha{
+	display: inline-block;
+	width: 37%;
+	vertical-align: top;
+}
+#direccion{
+	text-align: left;
+}

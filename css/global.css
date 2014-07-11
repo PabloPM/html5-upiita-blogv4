@@ -1,7 +1,7 @@
 /*tamaño de letra por default*/
 /*lap font-size: 16px 1em = 16px
  moviles font-size: 20px 1em=20px*/
-body{
+body {
 	font-family: 'GloriaHallelujah';
 }
 
@@ -35,7 +35,6 @@ nav, footer {
 }
 #bienvenida {
 	background-image: url("../imagenes/portada.jpg");
-
 	/*imagen cubre toda la caja*/
 	background-size: cover;
 	/*la imagen no se repita*/
@@ -49,7 +48,7 @@ nav, footer {
 .servicio {
 	padding: 0% 5% 0% 5%;
 }
-#contacto,#nuestros-servicios, #galeria, #suscrito{
+#contacto, #nuestros-servicios, #galeria, #suscrito, #chat, #ubicacion {
 	background-image: url("../imagenes/fondo.png");
 	background-attachment: fixed;
 	text-align: center;
@@ -71,45 +70,48 @@ img, video {
 	/*solo se usa para imagenes y videos*/
 	max-width: 100%;
 }
-#menu ul li a{
-	color:#C7C0DE;
+#menu ul li a {
+	color: #C7C0DE;
 	text-decoration: none;
 	display: inline-block;
 }
 
-#menu ul{
+#menu ul {
 	margin: 0px;
 }
 
-#conocenos h3{
+#conocenos h3 {
 	margin: 0px;
 }
 
-footer{
+footer {
 	padding: 3%;
 }
-#siguenos, #suscribir, #powered{
+#siguenos, #suscribir, #powered {
 	padding: 1% 4% 1% 4%;
 }
 
+#submit-suscribir {
+	margin-top: 26px;
+}
+
 /* una clase fondo-blanco */
-.fondo-blanco{
+.fondo-blanco {
 	background-color: white;
 }
 /*galeria*/
-#galeria{
-	height: 750px;
+#galeria {
+	padding-top: 0px;
 	text-align: center;
 }
 #galeria h2 {
+	margin-top: 0px;
 	text-align: center;
 	color: #1E1E1C;
 	font-size: 3em;
 }
 
 #contenedor-imagen {
-	display: inline-block;
-	width: 40%;
 	border-radius: 1em;
 	border: solid 2px #C7C0DE;
 	background-color: #C7C0DE;
@@ -117,18 +119,10 @@ footer{
 	position: relative;
 }
 
-#contenedor-preview {
-	display: inline-block;
-	width: 15%;
-	vertical-align: top;
-	margin-left: 10%;
-}
-
 #contenedor-preview img {
 	border-radius: 1em;
 	border: solid 2px #C7C0DE;
 	background-color: #C7C0DE;
-	padding: 5%;
 }
 
 #descripcion-imagen {
@@ -136,21 +130,20 @@ footer{
 	padding: 4%;
 	background-color: #3B2F63;
 	opacity: 0.7;
-	margin: 0px 5% 5% 5%;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 }
 /*pseudoselector focus*/
-#email{
+#email {
 	width: 60%;
 }
-#email:focus{
+#email:focus {
 	width: 80%;
 }
 /*transiciones*/
-#email, #menu ul li a, .servicio img, #siguenos img{
+#email, #menu ul li a, .servicio img, #siguenos img {
 	transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
 	-moz-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
 	-ms-transition: all 2s cubic-bezier(0,1.1,.83,.67) 0s;
@@ -159,48 +152,68 @@ footer{
 }
 
 /*pseudo selectores para formas*/
-input:required:invalid{
+input:required:invalid {
 	background-image: url("../imagenes/incorrecto.png");
 	background-repeat: no-repeat;
 	background-size: 20px;
 	background-position: right top;
 }
 
-input:required:valid{
+input:required:valid {
 	background-image: url("../imagenes/correcto.png");
 	background-repeat: no-repeat;
 	background-size: 20px;
 	background-position: right top;
 }
 /*ubicacion*/
-#direccion, #columna-derecha{
-	display: inline-block;
-	width: 40%;
-	vertical-align: top;
+#ubicacion h2 {
+	margin-top: 0px;
 }
-
-#mapa{
+#direccion, #columna-derecha {
+	padding: 0% 5% 0% 5%;
+}
+#mapa {
 	width: 400px;
 	height: 400px;
 	border: solid 2px #3B2F63;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*contacto*/
-#formulario{
-	text-align:left;
+#contacto h2 {
+	margin-top: 0px;
 }
-#chat{
+#formulario {
+	text-align: left;
+}
+
+#formulario div {
+	padding: 2% 5% 2% 5%;
+}
+
+#name, #email {
+	width: 280px;
+}
+#url {
+	width: 320px;
+}
+#comment {
+	width: 400px;
+}
+/*chat*/
+#chat {
 	font-size: 1.6em;
 	text-align: left;
 	padding: 1% 5% 4% 5%;
 }
-#chat h2{
+#chat h2 {
 	text-align: center;
 }
 
-#mensaje-usuario,  #nombre-usuario{
-	width: 30%;
+#mensaje-usuario, #nombre-usuario {
+	width: 350px;
 }
 
-.mensaje span{
+.mensaje span {
 	color: #3B2F63;
 }

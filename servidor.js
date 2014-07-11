@@ -149,5 +149,15 @@ io.sockets.on("connection", function(socket) {
 			nombre : sanitizer.escape(datos.nombre)
 		});
 	});
-});
 
+	//cuando alguien se desconecta diminuyo el contador de usuarios
+	socket.on("disconnect", function() {
+		//actualizar contador
+		contador = contador - 1;
+		//enviar un mensaje a los clientes
+		io.sockets.emit("actualizar_contador", {
+			clientes : contador
+		});
+	});
+
+});

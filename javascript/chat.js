@@ -8,9 +8,9 @@ $(function() {
 		var nombreCliente = $("#nombre-usuario").val();
 		var mensajeCliente = $("#mensaje-usuario").val();
 		/* enviar datos al servidor */
-		socket.emit("mensaje_al_servidor",{
-			nombre: nombreCliente,
-			mensaje: mensajeCliente
+		socket.emit("mensaje_al_servidor", {
+			nombre : nombreCliente,
+			mensaje : mensajeCliente
 		});
 	});
 	/*recibir mensaje del servidor*/
@@ -18,13 +18,13 @@ $(function() {
 		var caja = "<div class='mensaje'> <span>" + nom + " dice: </span> " + mens + "</div>";
 		$("#mensajes").append(caja);
 	};
-	
-	socket.on("mensaje_al_cliente",function(datos){
+
+	socket.on("mensaje_al_cliente", function(datos) {
 		mostrar_mensaje(datos.nombre, datos.mensaje);
 	});
-	
+
 	//escuchar el mensaje actualiza contador
-	socket.on("actualizar_contador", function(datos){
+	socket.on("actualizar_contador", function(datos) {
 		cajita.html(datos.clientes);
 	});
 });
