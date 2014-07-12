@@ -46,9 +46,9 @@ $(function() {
 
 		/*Obtenemos la ruta del nuevo contenido a cargar el contenedor
 		 esta ruta se carga mediante una petición ajax*/
-		rutaAJAX = seccion.data("ruta");
+		rutaAJAX = seccion.data("ruta");// /galeria_contenido
 		/*Obtenemos la ruta que originalmente se usaba para hacer GET*/
-		rutaGET = seccion.attr("href");
+		rutaGET = seccion.attr("href");// /galeria
 
 		/*Mediante la librería "jQuery History", hacemos que cambie
 		 la URL cuando se hace una petición AJAX 
